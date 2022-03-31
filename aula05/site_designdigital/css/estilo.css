@@ -1,0 +1,108 @@
+body{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    color: #444444;
+}
+
+/* inicio cabeçalho */
+
+header{
+   
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;    
+    column-gap: 500px;
+
+}
+nav {
+    display: flex;
+    column-gap: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #999999;
+}
+
+/* inicio do primeiro setor do site */
+
+.section1{
+    display: flex;
+    justify-content: center;
+}
+
+.banner{
+    display: flex;  
+}
+
+.imagem-banner{
+    width: 1128px;
+    height: 450px;
+}
+
+.caixatexto{
+    background: rgba( 54, 72, 71, 0.6);
+    position: absolute;
+    color: white;
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 480px;
+    height: 217px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 42px;
+    color: white;    
+}
+
+.acaixa{
+    color: #00ccff;
+    text-decoration: none;
+}
+
+/* inicio segundo setor do site */
+
+.section2{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    column-gap: 25px;  
+}
+
+.posts{
+    width: 263px;
+    text-align: justify;
+}
+
+.img_posts{
+    width: 263px;
+    height: 216px;
+}
+
+h3{
+    padding: 5px;
+    font-size: 26px;
+    text-align: left;
+}
+
+/* rodapé */
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 850px;
+}
