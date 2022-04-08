@@ -1,40 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{   
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    color: #444444;
-    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    color: #444; /* quando todos os numeros do Hexadecimal sao iguais pode-se simplificar colocando apenas caracteres*/
+
 }
 
 .container{
     width: 1128px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
+}
+
+img, video, figure, embed{
+    max-width: 100%;
 }
 
 /* inicio cabeçalho */
+
+
+a{
+    text-decoration: none;
+    color: #999999;
+    font-size: 16px;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
 
 header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 36px;
+    margin-bottom: 36px;
+
 }
 
 ul {
+
     display: flex;
     flex-direction: row;
     column-gap: 40px;
     list-style-type: none;
-    
 }
 
-nav a{
-    text-decoration: none;
-    color: #999999;
-}
+
+
+
 
 /* inicio do primeiro setor do site */
 
@@ -48,25 +65,26 @@ nav a{
 }
 
 .imagem-banner{
+    background: url('../img/banner.jpg');
     width: 1128px;
     height: 450px;
 }
 
 .caixatexto{
-    background: rgba( 000, 000, 000, 0.6);
+
+    background: rgba( 0, 0, 0, 0.6);
     position: absolute;
     color: white;
     margin-top: 50px;
-    box-sizing: border-box;
     width: 480px;
     height: 217px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 24px 14px 24px 40px;
+
 }
 
-h2{
-    margin-top: 25px;
-    margin-bottom: 25px;
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 42px;
     color: white;    
 }
@@ -79,25 +97,23 @@ h2{
 /* inicio segundo setor do site */
 
 .section2{
-
+    
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 50px;
-    column-gap: 25px;  
 }
 
 .posts{
-    width: 263px;
+    width: 264px;
     text-align: justify;
 }
 
 .img_posts{
-    width: 263px;
-    height: 216px;
+    width: 100%;
 }
 
-h3{
+h2{
     padding: 5px;
     font-size: 26px;
     text-align: left;
@@ -106,8 +122,9 @@ h3{
 /* rodapé */
 
 footer{
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-   
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+
 }
