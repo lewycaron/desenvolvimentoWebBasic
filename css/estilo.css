@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+
+    font-family: 'Acumin Variable Concept';
+    src: url('../fonts/AcuminVariableConcept.otf') format('OpenType');
+}
+
+body{
+    font-size: 65.5%;
+    background-image: linear-gradient(to bottom left, #3d3d3d, black);
+    font-family: 'Acumin Variable Concept';
+    color: white;
+} 
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+}
+/* cabeçalho */
+
+
+header{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome_destaque{
+    margin-left: 40px;
+    font-size: 1.875em;
+    font-weight: 600;
+    color: #ffba00;
+}
+.nome_destaque p{
+    font-size: 0.75em;
+    color: white;
+}
+
+/* Primeira linha de conteudo */ 
+
+.linha{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.titulo_conteudo{
+    font-size: 1.875em;
+    font-weight: 800;
+}
+
+.div_conteudo{
+    width: 580px;
+
+    margin: 10px 20px 10px 20px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infos_conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+
+}
+
+/* perfil pessoal */ 
+
+.barra_pp{
+    height: 235px;
+    width: 10%;
+    background-color: #ff2a00;
+}
+.color_pp{
+    color: #ff2a00;
+}
+
+.texto_pp{
+    font-size: 1.2em;
+    text-align: justify;
+    margin-right: 80px;
+    width: 70%;
+    
+
+}
+.perfilcomportamental{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icone_pp{
+    margin-left: 20px;
+}
+
+/* Graduacao */
+
+
+.barra_grad{
+    height: 235px;
+    width: 10%;
+    background-color: #ff6e00;
+}
+.color_grad{
+    color: #ff6e00;
+}
+
+.texto_grad{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 20px;
+
+}
+
+/* certficados  */
+
+.infos_conteudo_certif{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.barra_certif{
+    height: 430px;
+    width: 55px;
+    background-color: #ffba00;
+}
+.color_certif{
+    color: #ffba00;
+}
+
+.texto_certif{
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 20px;
+    
+}
+
+/* EXPERIENCIAS ANTERIORES*/
+
+.barra_exp{
+    height: 430px;
+    width: 55px;
+    background-color: #99ad00;
+}
+.color_exp{
+    color: #99ad00;
+}
+
+.texto_exp{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 20px;
+    width: 380px;
+}
+
+/* LINGUAS E FERRAMENTAS */ 
+
+.infos_conteudo_tools{
+    display: flex;
+    align-items: flex-start;
+}
+.img_tools{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.barra_tools{
+    height: 230px;
+    width: 55px;
+    background-color: #008cff;
+}
+.color_tools{
+    color: #008cff;
+}
+
+
+
+.texto_tools{
+    column-gap: 30px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.2em;
+}
+
+.textoInterno{
+    margin: 0px 10px 10px 10px;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* CONTATO */
+
+.infos_conteudo_contato{
+    display: flex;
+    align-items: flex-start;
+}
+.img_contato{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.barra_contato{
+    height: 230px;
+    width: 55px;
+    background-color: #ff0088;
+}
+
+.color_contato{
+    color: #ff0088;
+}
+
+.texto_contato{
+
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 20px;
+    column-gap: 30px;
+    align-items: flex-start;
+    
+}
+
+.textoInterno{
+    margin: 0px 10px 10px 10px;
+}
+
+.coluna{
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* HOBBIES */ 
+
+.infos_conteudo_hobbie{
+    display: flex;
+    align-items: flex-start;
+}
+.img_hobbie{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.barra_hobbie{
+    height: 200px;
+    width: 55px;
+    background-color: #424242;
+}
+.color_hobbie{
+    color: #424242;
+}
+
+.texto_hobbie{
+    column-gap: 30px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.2em;
+}
+
+
+/* AULAS */
+
+.infos_conteudo_aulas{
+    display: flex;
+    align-items: flex-start;
+}
+.img_aulas{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.barra_aulas{
+    height: 230px;
+    width: 55px;
+    background-color: white;
+}
+
+.color_aulas{
+    color: white;
+}
+
+.texto_aulas{
+    column-gap: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 20px;
+    column-gap: 30px;
+    align-items: flex-start;
+    
+}
+
+.textoInterno_aulas a{
+    text-decoration: none;
+    color: white;
+}
+
+.textoInterno_aulas a:hover{
+    text-decoration: none;
+    color:#99ad00;
+    font-weight: 600;
+}
