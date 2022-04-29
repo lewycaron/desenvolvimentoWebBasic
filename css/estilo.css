@@ -19,8 +19,8 @@ body{
     width: 1280px;
     margin: 0 auto;
 }
-/* cabeçalho */
 
+/* cabeçalho */
 
 header{
     margin-top: 70px;
@@ -32,32 +32,32 @@ header{
 
 .nome_destaque{
     margin-left: 40px;
-    font-size: 1.875em;
+    font-size: 1.875em; /* 40pt /  */
     font-weight: 600;
     color: #ffba00;
 }
+
 .nome_destaque p{
-    font-size: 0.75em;
+    font-size: 0.75em; /*16pt / */
     color: white;
 }
 
-/* Primeira linha de conteudo */ 
+/* CONTEUDO */
 
 .linha{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
-
 .titulo_conteudo{
-    font-size: 1.875em;
+    font-size: 1.875em; /* 30pt / */ 
     font-weight: 800;
 }
 
 .div_conteudo{
-    width: 580px;
-
-    margin: 10px 20px 10px 20px;
+    width:  580px ; /* 48.4% -->  580px baseado em resolução de 1280px */
+    margin: 20px;
 }
 
 .titulo{
@@ -68,49 +68,57 @@ header{
 }
 
 .infos_conteudo{
+    font-size: 1.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
+}
 
+.texto_direita{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    width: 73.27%;
+    margin-left: 13.8%;
+    margin-right: 3.45%;
+    
+}
+
+.texto_esquerda{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    width: 73.27%;
+    margin-left: 3.45%;
+    margin-right: 13.8%;
 }
 
 /* perfil pessoal */ 
 
 .barra_pp{
-    height: 235px;
     width: 10%;
     background-color: #ff2a00;
 }
 .color_pp{
     color: #ff2a00;
 }
-
 .texto_pp{
-    font-size: 1.2em;
-    text-align: justify;
-    margin-right: 80px;
-    width: 70%;
-    
-
+    flex-direction: column;
+    row-gap: 20px;
 }
 .perfilcomportamental{
-
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
-
 .icone_pp{
     margin-left: 20px;
 }
 
 /* Graduacao */
 
-
 .barra_grad{
-    height: 235px;
     width: 10%;
     background-color: #ff6e00;
 }
@@ -118,218 +126,151 @@ header{
     color: #ff6e00;
 }
 
-.texto_grad{
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.2em;
-    text-align: justify;
-    margin-left: 80px;
-    margin-right: 20px;
-
-}
-
 /* certficados  */
 
-.infos_conteudo_certif{
-
-    display: flex;
-    flex-direction: row;
-}
-
 .barra_certif{
-    height: 430px;
-    width: 55px;
+    width: 10%; /* 55px */
     background-color: #ffba00;
 }
 .color_certif{
     color: #ffba00;
 }
 
-.texto_certif{
-    font-size: 1.2em;
-    text-align: justify;
-    margin-left: 20px;
-    
-}
-
 /* EXPERIENCIAS ANTERIORES*/
 
 .barra_exp{
-    height: 430px;
-    width: 55px;
+    width: 10%;
     background-color: #99ad00;
 }
 .color_exp{
     color: #99ad00;
 }
 
-.texto_exp{
+/* Alinhamento do grid de icones com texto */
+
+.img_icones{
+    max-width: 30px;
+    max-height: 30px;
+}
+.coluna{
     display: flex;
-    justify-content: space-around;
-    font-size: 1.2em;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.grid_interno{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+}
+.grid_interno p{
+    margin-left: 20px;
     text-align: justify;
-    margin-left: 80px;
-    margin-right: 20px;
-    width: 380px;
 }
 
 /* LINGUAS E FERRAMENTAS */ 
 
-.infos_conteudo_tools{
-    display: flex;
-    align-items: flex-start;
-}
-.img_tools{
-    max-width: 30px;
-    max-height: 30px;
-}
-
 .barra_tools{
-    height: 230px;
-    width: 55px;
+    width: 10%;
     background-color: #008cff;
 }
 .color_tools{
     color: #008cff;
 }
 
-
-
-.texto_tools{
-    column-gap: 30px;
-    margin-left: 20px;
-    display: flex;
-    align-items: flex-start;
-    font-size: 1.2em;
-}
-
-.textoInterno{
-    margin: 0px 10px 10px 10px;
-}
-
-.coluna{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
 /* CONTATO */
 
-.infos_conteudo_contato{
-    display: flex;
-    align-items: flex-start;
-}
-.img_contato{
-    max-width: 30px;
-    max-height: 30px;
-}
-
 .barra_contato{
-    height: 230px;
-    width: 55px;
+    width: 10%;
     background-color: #ff0088;
 }
-
 .color_contato{
     color: #ff0088;
 }
 
-.texto_contato{
-
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.2em;
-    text-align: justify;
-    margin-left: 80px;
-    margin-right: 20px;
-    column-gap: 30px;
-    align-items: flex-start;
-    
-}
-
-.textoInterno{
-    margin: 0px 10px 10px 10px;
-}
-
-.coluna{
-    row-gap: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
 /* HOBBIES */ 
 
-.infos_conteudo_hobbie{
-    display: flex;
-    align-items: flex-start;
-}
-.img_hobbie{
-    max-width: 30px;
-    max-height: 30px;
-}
-
 .barra_hobbie{
-    height: 200px;
-    width: 55px;
+    width: 10%;
     background-color: #424242;
 }
 .color_hobbie{
     color: #424242;
 }
 
-.texto_hobbie{
-    column-gap: 30px;
-    margin-left: 20px;
-    display: flex;
-    align-items: flex-start;
-    font-size: 1.2em;
-}
-
-
 /* AULAS */
 
-.infos_conteudo_aulas{
-    display: flex;
-    align-items: flex-start;
-}
-.img_aulas{
-    max-width: 30px;
-    max-height: 30px;
-}
-
 .barra_aulas{
-    height: 230px;
-    width: 55px;
+    width: 10%;
     background-color: white;
 }
-
 .color_aulas{
     color: white;
 }
-
-.texto_aulas{
-    column-gap: 50px;
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.2em;
-    text-align: justify;
-    margin-left: 80px;
-    margin-right: 20px;
-    column-gap: 30px;
-    align-items: flex-start;
-    
-}
-
-.textoInterno_aulas a{
+.grid_interno a{
     text-decoration: none;
     color: white;
 }
-
-.textoInterno_aulas a:hover{
+.grid_interno a:hover{
     text-decoration: none;
     color:#99ad00;
     font-weight: 600;
+}
+
+@media screen and (max-width: 1024px){
+    
+    .container{
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    body{
+        background-image: linear-gradient(to bottom left, #242424, #242424);
+    }
+    
+    .linha{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos_conteudo{
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;        
+        align-items: center;
+        margin: 10px;
+    }
+
+    .texto_direita{
+        margin: 10px ;
+    }
+    
+    .texto_esquerda{
+        margin: 10px ;
+    }
+
+    .medida_barra{
+        height: 55px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 712px){
+    
+    .container{
+        width: 712px;
+    }
+
+    .barra{
+        display: none;
+    }
+
+    .titulo{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
