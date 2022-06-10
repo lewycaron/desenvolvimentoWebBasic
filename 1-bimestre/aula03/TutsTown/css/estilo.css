@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+}
+body{
+    text-align: center;
+    background-color: rgb(255, 251, 218);
+}
+
+.imagemcabecalho{
+    width: 640px;
+}
+
+a{
+    color: rgb(255, 115, 0);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    margin: 0px;
+    text-align: left;
+}
+
+h2{
+    color:rgb(45, 81, 129);
+    margin-left: 30px;
+    font-weight: 100;
+}
+h1{
+    color: rgb(45, 81, 129);
+    font-size: 60px;
+    font-weight: 100;
+    
+}
+
+.imgbody{
+    height: 120px;
+}
+
+ul{
+    color: rgb(255, 174, 0);
+    text-align: left;
+}
+
+footer{
+
+    background-color: rgb(255, 193, 34);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
