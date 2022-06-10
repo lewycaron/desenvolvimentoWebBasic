@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+}
+.cabecalho {
+
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+img {
+    height: 60px;
+}
+
+h1{
+    margin: 10px;
+    color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+.tabela{
+    display: flex;
+    align-items: center;
+    
+}
+
+p{
+    color: yellow;
+}
+.destaque{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+.pequeno{
+    
+    text-align: left;
+}
+
+
+

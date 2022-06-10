@@ -1,0 +1,75 @@
+/* CSS do tuts Town*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: Brokenbrush;
+    src: url('fonts/Brokenbrush.ttf');
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #faf8da
+}
+
+header{
+    text-align: center; /* Alinha o conteudo do header*/
+}
+
+h1{
+    color:#205d76;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.imagemcabecalho{
+    width: 650px;
+}
+
+
+a{
+    color: #ea6e2f;
+    font-size: 20px;
+}
+
+
+article{
+
+    display: flex;
+    margin: 50px auto;
+    width: 450px;
+
+}
+
+
+h2{
+    font-family: sans-serif;
+    color:rgb(45, 81, 129);
+    margin-left: 30px;
+    font-weight: 100;
+}
+
+
+
+.imgbody{
+    height: 120px;
+}
+
+
+ul{
+    color: rgb(255, 174, 0);
+    text-align: left;
+    
+}
+
+footer{
+
+    background-color: rgb(255, 193, 34);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

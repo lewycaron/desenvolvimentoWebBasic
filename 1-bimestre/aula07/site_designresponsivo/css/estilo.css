@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{   
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.5;
+    color: #444; /* quando todos os numeros do Hexadecimal sao iguais pode-se simplificar colocando apenas caracteres*/
+}
+
+*, *:after, *::before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1128px;
+    margin: 0 auto;
+}
+
+img, video, figure, embed{
+    max-width: 100%;
+}
+
+/* inicio cabeçalho */
+
+a{
+    text-decoration: none;
+    color: #999999;
+    font-size: 1.6em;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    margin-top: 3.6em; /* 36px */
+    margin-bottom: 3.6em; /* 36px */
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4.2em; /* 42px */
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+
+/* inicio do primeiro setor do site */
+
+
+.banner{
+    margin-bottom: 4.8em;
+    width: 100%;
+    height: 450px;
+}
+
+
+.caixa{
+    position: absolute;
+    background: rgba( 0, 0, 0, 0.6);
+    color: white;
+    margin-top: 5.0em; /* 50px */
+    width: 42%;
+    padding: 2.4em 1.4em 2.4em 4em; /* 24px, 14px, 24px, 40px */
+}
+
+
+.caixa p{
+    font-size: 1.8em;
+}
+
+.caixa a{
+    font-size: 1.6em;
+    color: #00ccff;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 4em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;    
+}
+
+
+/* inicio segundo setor do site */
+
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5em; /* 50px */
+}
+
+.img_posts{
+    max-width: 100%;
+}
+
+.posts{
+    text-align: justify;
+    margin-right: 2.13%; /* 24px */
+    
+}
+.posts:last-child{
+    margin-right: 0px;
+}
+
+h2{
+    font-size: 2.4em;
+    padding: 0.312em; /* 5px */
+    text-align: left;    
+}
+
+p{
+    font-size: 1.6em;
+}
+
+/* rodapé */
+
+footer{
+    width: 100%;
+    margin-top: 2.4em; /* 24px */
+    margin-bottom: 2.4em; /* 24px */
+}
+
+.footer{
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 1128px){
+	.container{
+		padding: 0 2.4em 0 2.4em;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+
+	.banner {
+        background-size: auto;
+
+    }
+    .caixa{
+		width: 65%;
+	}
+
+	.posts{
+		width: 48%;
+		margin-right: 2%;
+		margin-bottom: 2.4em;
+	}
+
+	.post:nth-child(even){
+		margin-right: 0;
+	}
+
+
+}
+
+@media screen and (max-width: 718px){
+
+	.banner{
+        width: 100%;
+		height: 250px;
+	}
+
+	.caixa{
+		width: 100%;
+		background: #000;
+		margin-top: 200px;
+		display: block;
+	}
+
+	h1{
+		font-size: 2.5em;
+	}
+
+	section{
+		margin-top: 550px;
+	}
+}
+
+@media screen and (max-width: 640px){
+
+	ul{
+        font-size: 0.8em;
+		margin-left: 0;
+	}
+
+}
+
+@media screen and (max-width: 520px){
+	.posts{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.caixa{
+		padding: 1.2em 2em 1.2em 2em;
+		position: relative;
+		display: block;
+		float: left;
+		width: 100%;
+		background:#000;
+		margin-top: 80px;
+	}
+
+	.banner{
+		height: 120px;
+	}
+}
+
+
+
+
+.clearfix:before,
+.clearfix:after
+{
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.clearfix{
+	*zoom:1;
+}
